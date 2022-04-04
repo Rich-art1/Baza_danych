@@ -1,0 +1,11 @@
+﻿@page
+@model FizzBuzzNet.Pages.Zapisane_w_sesjiModel
+@{
+                @if (Model.Lista_user.user != null)
+                {
+                    @foreach (var item in Model.Lista_user.user)
+                    {
+                <p class="userData">@item.Name, @item.LastName, @item.Number, @item.Data</p>             
+                    }
+                } 
+    }
